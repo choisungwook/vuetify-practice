@@ -7,19 +7,19 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/myproject",
     name: "Home",
     component: DefaultLayout,
     children: [
       {
-        path: "/home",
+        path: "/myproject/home",
         name: "home",
         // which is lazy-loaded when the route is visited.
         component: () =>
           import(/* webpackChunkName: "about" */ "../views/Home.vue"),
       },
       {
-        path: "/helloworld",
+        path: "/myproject/helloworld",
         name: "helloworld",
         // which is lazy-loaded when the route is visited.
         component: () =>
@@ -28,12 +28,12 @@ const routes = [
     ],
   },
   {
-    path: "/auth",
+    path: "/myproject/auth",
     name: "Auth",
     component: AuthLayout,
     children: [
       {
-        path: "/signup",
+        path: "/myproject/signup",
         name: "signup",
         // which is lazy-loaded when the route is visited.
         component: () =>

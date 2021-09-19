@@ -1,7 +1,7 @@
 const state = {
   menus: [
-    { title: "home", icon: "mdi-view-dashboard", to: "/home" },
-    { title: "helloworld", icon: "mdi-image", to: "/helloworld" },
+    { title: "home", icon: "mdi-view-dashboard", to: "/myproject/home" },
+    { title: "helloworld", icon: "mdi-image", to: "/myproject/helloworld" },
   ],
   drawer: false,
 };
