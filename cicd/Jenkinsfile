@@ -11,11 +11,11 @@ pipeline {
     }
 
     stages {
-        stage('git checkout') {
-            steps {
-                checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/choisungwook/vuetify-practice.git']]]
-            }
-        }
+        // stage('git checkout') {
+        //     steps {
+        //         checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/choisungwook/vuetify-practice.git']]]
+        //     }
+        // }
         stage('yarn install&build'){
             steps{
                 sh 'yarn install'
