@@ -7,19 +7,19 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/myproject",
+    path: "/vue-practice1",
     name: "Home",
     component: DefaultLayout,
     children: [
       {
-        path: "/home",
+        path: "/vue-practice1/home",
         name: "home",
         // which is lazy-loaded when the route is visited.
         component: () =>
           import(/* webpackChunkName: "about" */ "../views/Home.vue"),
       },
       {
-        path: "/helloworld",
+        path: "/vue-practice1/helloworld",
         name: "helloworld",
         // which is lazy-loaded when the route is visited.
         component: () =>
