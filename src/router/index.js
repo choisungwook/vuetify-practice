@@ -12,14 +12,14 @@ const routes = [
     component: DefaultLayout,
     children: [
       {
-        path: "/myproject/home",
+        path: "/home",
         name: "home",
         // which is lazy-loaded when the route is visited.
         component: () =>
           import(/* webpackChunkName: "about" */ "../views/Home.vue"),
       },
       {
-        path: "/myproject/helloworld",
+        path: "/helloworld",
         name: "helloworld",
         // which is lazy-loaded when the route is visited.
         component: () =>
@@ -28,12 +28,12 @@ const routes = [
     ],
   },
   {
-    path: "/myproject/auth",
+    path: "/auth",
     name: "Auth",
     component: AuthLayout,
     children: [
       {
-        path: "/myproject/signup",
+        path: "/signup",
         name: "signup",
         // which is lazy-loaded when the route is visited.
         component: () =>
