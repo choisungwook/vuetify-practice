@@ -1,6 +1,6 @@
 const state = {
   menus: [
-    { title: "home", icon: "mdi-view-dashboard", to: "/" },
+    { title: "home", icon: "mdi-view-dashboard", to: "/home" },
     { title: "helloworld", icon: "mdi-image", to: "/helloworld" },
   ],
   drawer: false,
