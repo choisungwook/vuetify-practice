@@ -43,13 +43,7 @@ import { mapState } from "vuex";
 export default {
   name: "DefaultLayout",
 
-  data: () => ({
-    items: [
-      { title: "home", icon: "mdi-view-dashboard", to: "/" },
-      { title: "helloworld", icon: "mdi-image", to: "/helloworld" },
-    ],
-    right: null,
-  }),
+  data: () => ({}),
 
   computed: {
     ...mapState("menu", ["menus"]),
