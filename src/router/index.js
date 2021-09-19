@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import DefaultLayout from "@/layouts/default/Index";
-// import Home from "@/views/Home.vue";
+import AuthLayout from "@/layouts/auth/Index";
 
 Vue.use(VueRouter);
 
@@ -27,15 +27,20 @@ const routes = [
       },
     ],
   },
-  // {
-  //   path: "/helloworld",
-  //   name: "Hellowlrd",
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () =>
-  //     import(/* webpackChunkName: "about" */ "../views/Helloworld.vue"),
-  // },
+  {
+    path: "/auth",
+    name: "Auth",
+    component: AuthLayout,
+    children: [
+      {
+        path: "/signup",
+        name: "signup",
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/auth/Signup.vue"),
+      },
+    ],
+  },
 ];
 
 const router = new VueRouter({
