@@ -1,24 +1,8 @@
-# demo-vuejs
+# 개발이력 관리
+* 페이지 추가
+* 사이드 네비게이션
+* 사이드 네비게이션 <-- 현재
 
-## Project setup
-```
-npm install
-```
+![off](imgs/bar_toggle_off.png)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![off](imgs/bar_toggle_on.png)
