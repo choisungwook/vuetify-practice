@@ -17,13 +17,13 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link :to="item.to">
+        <v-list-item v-for="menu in menus" :key="menu.title" link :to="menu.to">
           <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon>{{ menu.icon }}</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title>{{ menu.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -38,16 +38,23 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "DefaultLayout",
 
-  data: () => ({
-    items: [
-      { title: "home", icon: "mdi-view-dashboard", to: "/" },
-      { title: "helloworld", icon: "mdi-image", to: "/helloworld" },
-    ],
-    right: null,
-    drawer: false,
-  }),
+  data: () => ({}),
+
+  computed: {
+    ...mapState("menu", ["menus"]),
+    drawer: {
+      get() {
+        return this.$store.getters["menu/getDrawer"];
+      },
+      set(value) {
+        return this.$store.dispatch("menu/toggleDrawer", value);
+      },
+    },
+  },
 };
 </script>
