@@ -3,7 +3,16 @@
     <v-app-bar app primary dark>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>App bar title</v-toolbar-title>
+
       <v-spacer></v-spacer>
+
+      <v-btn flat @click="$router.push({ name: 'signup' })">
+        <span>회원가입</span>
+      </v-btn>
+
+      <v-btn flat>
+        <span>로그인</span>
+      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer app v-model="drawer">
