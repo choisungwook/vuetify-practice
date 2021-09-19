@@ -1,4 +1,8 @@
-# 개요
-* navbar와 router 연동
+# 개발이력 관리
+* 페이지 추가
+* 사이드 네비게이션
+* 사이드 네비게이션 <-- 현재
 
-![결과](imgs/nav_router_interagete.png)
+![off](imgs/bar_toggle_off.png)
+
+![off](imgs/bar_toggle_on.png)
