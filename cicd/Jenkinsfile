@@ -6,7 +6,7 @@ pipeline {
         DOCKER_IMAGE = "vuejs-practice"
         TAG = "${BUILD_NUMBER}"
         DOCKER_IMAGENAME = "${DOCKER_IMAGE}:${TAG}"
-        NODEPORT = "11110"
+        NODEPORT = "31110"
         NAMESPACE = "myproject"
     }
 
