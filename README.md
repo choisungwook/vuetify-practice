@@ -1,3 +1,5 @@
+> 배포링크: https://myproject.choicloudlab.com/vue-practice1/home
+
 # 개발이력 관리
 * 페이지 추가
 * 사이드 네비게이션
