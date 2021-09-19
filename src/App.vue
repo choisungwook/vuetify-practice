@@ -33,14 +33,12 @@
 export default {
   name: "App",
 
-  data() {
-    return {
-      items: [
-        { title: "home", icon: "mdi-view-dashboard", to: "/" },
-        { title: "helloworld", icon: "mdi-image", to: "/helloworld" },
-      ],
-      right: null,
-    };
-  },
+  data: () => ({
+    items: [
+      { title: "home", icon: "mdi-view-dashboard", to: "/" },
+      { title: "helloworld", icon: "mdi-image", to: "/helloworld" },
+    ],
+    right: null,
+  }),
 };
 </script>
